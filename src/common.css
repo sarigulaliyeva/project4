@@ -6,4 +6,13 @@ body, button, input {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     color: #000807;
 }
+li{
+    background-color: #FFEEDB;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+li:hover{
+    cursor: pointer;
+}
 

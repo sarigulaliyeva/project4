@@ -16,6 +16,7 @@
   font-size: 14px;
   padding: 5px 10px;
   border: 1px solid rgba(0, 8, 7, .5);
+  border-radius: 10px;
 }
 
 .search-box__form-submit {
@@ -25,13 +26,14 @@
   transition: all 0.2s linear;
   color: #FFEEDB;
   background-color: rgba(0, 8, 7);
+  border-radius: 10px;
 }
 
 .search-box__form-submit:hover:not(:disabled) {
   opacity: 0.8;
   cursor: pointer;
   transition: all 0.2s linear;
-  background-color: #FFEEDB;
+  background-color: red;
   color: rgba(0, 8, 7);
 }
 

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     border: 1px solid rgba(0, 8, 7);
     padding: 30px 20px;
+    border-radius: 10px;
   }
   
   .favorites__name {
@@ -11,6 +12,7 @@
     padding: 5px 10px;
     border: 1px solid rgba(0, 8, 7, 0.5);
     margin-bottom: 24px;
+    border-radius: 10px;
   }
   
   .favorites__list {
@@ -19,17 +21,19 @@
   
   .favorites__save {
     border: none;
-    background-color: #496ddb;
+    background-color: cadetblue;
     padding: 10px 15px;
     color: #ffeedb;
     font-size: 14px;
     transition: all 0.2s linear;
+    border-radius: 10px;
   }
   
   .favorites__save:hover {
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s linear;
+    background-color: red;
   }
 .link__none{
     display: none;

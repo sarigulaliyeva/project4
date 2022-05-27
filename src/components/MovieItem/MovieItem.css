@@ -29,3 +29,31 @@
     opacity: 0.9;
     transition: all 0.2s linear;
 }
+
+/* mobile css */
+@media only screen and (max-width: 720px) {
+    .movie-item {
+        padding: 6vw;
+        
+    }
+    
+    .movie-item__poster {
+        height: 35%;
+        margin-right: 4vw;
+     width: 35%;    }
+    
+    .movie-item__title {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        width: 60%;
+    }
+    
+    .movie-item__add-button {
+        padding: 2.7vw 2vw;
+        font-size: 3vw;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    
+  
+}

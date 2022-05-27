@@ -9,3 +9,16 @@
     font-size: 45px;
     margin-left: 40px;
 }
+
+/* mobile css */
+@media only screen and (max-width: 720px) {
+    .header {
+        background: #496DDB;
+        padding: 3vw calc(50% - 44vw) 2vw;
+    }
+
+    .header__title {
+        font-size: 6vw;
+        margin-left: 5vw;
+    }
+}

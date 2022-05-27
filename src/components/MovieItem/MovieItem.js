@@ -1,19 +1,47 @@
-import React, { Component } from 'react';
-import './MovieItem.css';
-
+import React, { Component } from "react";
+import "./MovieItem.css";
+import { selectMovies } from "../../redux/action";
+import { connect } from "react-redux";
 class MovieItem extends Component {
-    render() {
-        const { title, year, poster } = this.props;
-        return (
-            <article className="movie-item">
-                <img className="movie-item__poster" src={poster} alt={title} />
-                <div className="movie-item__info">
-                    <h3 className="movie-item__title">{title}&nbsp;({year})</h3>
-                    <button type="button" className="movie-item__add-button">Добавить в список</button>
-                </div>
-            </article>
-        );
-    }
+  isAdded=(id)=>{
+    const active=this.props.isAdded.find((item)=>{
+      return item.imdbID===id
+    });
+    return active
+  }
+  render() {
+    const { Title, Year, Poster, imdbID, addMovies,savedBolen } = this.props;
+    return (
+      <article className="movie-item">
+        <img className="movie-item__poster" src={Poster} alt={Title} />
+        <div className="movie-item__info">
+          <h3 className="movie-item__title">
+            {Title}&nbsp;({Year})
+          </h3>
+          <button
+            type="button"
+            className="movie-item__add-button"
+            onClick={() => addMovies(imdbID)}
+            disabled={savedBolen}
+          >
+            {this.isAdded(imdbID) ? "был добавлен в список":"добавить в список"}
+          </button>
+        </div>
+      </article>
+    );
+  }
 }
- 
-export default MovieItem;
+const mapStateToProps=(state)=>{
+  return{
+    isAdded:state.addMovies,
+    savedBolen:state.savedBolen,
+  }
+}
+const mapDispatchToProps = (dispatch) => { 
+  return {
+    addMovies:(id)=>{
+      dispatch(selectMovies(id))
+    }
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(MovieItem);

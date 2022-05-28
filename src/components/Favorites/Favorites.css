@@ -1,66 +1,46 @@
-.favorites {
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 8, 7);
-    padding: 30px 20px;
-    border-radius: 10px;
-  }
-  
-  .favorites__name {
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 16px;
-    padding: 5px 10px;
-    border: 1px solid rgba(0, 8, 7, 0.5);
-    margin-bottom: 24px;
-    border-radius: 10px;
-  }
-  
-  .favorites__list {
-    margin-bottom: 24px;
-  }
-  
-  .favorites__save {
-    border: none;
-    background-color: cadetblue;
-    padding: 10px 15px;
-    color: #ffeedb;
-    font-size: 14px;
-    transition: all 0.2s linear;
-    border-radius: 10px;
-  }
-  
-  .favorites__save:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    transition: all 0.2s linear;
-    background-color: red;
-  }
-.link__none{
-    display: none;
-  }
-
-  /* mobile css */
+/* Mobile */
   @media only screen and (max-width: 720px) {
     .favorites {
-      width: 80%;
-  
-      padding: 4vw;
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 8, 7);
+      padding: 30px 20px;
+      border-radius: 10px;
+      background-color: cadetblue;
     }
-  
+    
     .favorites__name {
       box-sizing: border-box;
       width: 100%;
-      font-size: 3vw;
-      padding: 1vw 1vw;
-      margin-bottom: 4vw;
+      font-size: 16px;
+      padding: 5px 10px;
+      border: 1px solid rgba(0, 8, 7, 0.5);
+      margin-bottom: 24px;
+      border-radius: 10px;
     }
-  
+    
     .favorites__list {
-      margin-bottom: 3vw;
-      font-size: 4vw;
+      margin-bottom: 24px;
     }
-  
+    
     .favorites__save {
-      font-size: 3vw;
+      border: none;
+      background-color: white;
+      padding: 10px 15px;
+      color: black;
+      font-size: 14px;
+      transition: all 0.2s linear;
+      border-radius: 10px;
+    }
+    
+    .favorites__save:hover {
+      cursor: pointer;
+      opacity: 0.9;
+      transition: all 0.2s linear;
+      background-color: red;
+    }
+  .link__none{
+      display: none;
+      font-style: italic;
+      color: #FFEEDB;
     }
   }

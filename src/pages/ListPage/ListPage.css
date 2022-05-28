@@ -1,29 +1,25 @@
-.list-page {
-    padding: 42px calc(50% - 300px);
-}
-
-.list-page__title {
-    font-size: 34px;
-    margin-bottom: 26px;
-    text-align: center;
-}
-
-.list-page ul li {
-    font-size: 18px;
-}
-
-/* mobile css */
-@media only screen and (max-width: 720px) {
+/* Mobile*/
+@media only screen and (min-width: 300px) {
     .list-page {
         padding: 42px calc(50% - 300px);
+        background-image: url(https://wallpaperaccess.com/full/1699275.jpg);
+        height: 87vh;
+        background-size: 138.88vw 107.15vh;
+        background-repeat: no-repeat;
     }
-
+    
     .list-page__title {
         font-size: 34px;
         margin-bottom: 26px;
+        text-align: center;
+        background-color: burlywood;
+        margin: 25px;
     }
-
+    
     .list-page ul li {
         font-size: 18px;
+        margin: 25px;
+        margin-left: 55px;
+        margin-right: 55px;
     }
 }

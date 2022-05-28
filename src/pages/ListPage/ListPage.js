@@ -7,7 +7,7 @@ class ListPage extends Component {
       title: "",
     };
     componentDidMount() {
-      const apiKey = "a91ebceb";
+      const apiKey = "c8aa48c8";
       const id = this.props.match.params.id;
       axios
         .get(`https://acb-api.algoritmika.org/api/movies/list/${id}`)

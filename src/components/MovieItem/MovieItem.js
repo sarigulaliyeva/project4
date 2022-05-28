@@ -30,18 +30,18 @@ class MovieItem extends Component {
       </article>
     );
   }
-}
-const mapStateToProps=(state)=>{
-  return{
-    isAdded:state.addMovies,
-    savedBolen:state.savedBolen,
-  }
-}
-const mapDispatchToProps = (dispatch) => { 
+}const mapDispatchToProps = (dispatch) => { 
   return {
     addMovies:(id)=>{
       dispatch(selectMovies(id))
     }
   };
 };
+const mapStateToProps=(state)=>{
+  return{
+    isAdded:state.addMovies,
+    savedBolen:state.savedBolen,
+  }
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(MovieItem);

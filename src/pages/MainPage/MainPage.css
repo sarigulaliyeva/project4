@@ -1,55 +1,27 @@
-.main-page__content {
-    padding: 42px calc(50% - 500px);
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-page__main-section {
-    padding-left: 40px;
-    box-sizing: border-box;
-    width: 60%;
-}
-
-.main-page__search-box {
-    margin-bottom: 35px;
-}
-
-.main-page__favorites {
-    width: 35%;   
-}
-
-/* mobile css */
+/*Mobile*/
 @media only screen and (max-width: 720px) {
     .main-page__content {
-        padding: 6vw calc(50% - 40vw);
+        padding: 42px calc(50% - 500px);
         display: flex;
         justify-content: space-between;
-        flex-direction: column-reverse;
+        background-image: url(https://www.itl.cat/pngfile/big/46-465731_streaming-movies.jpg);
+        height: 75.8vh;
+        background-size: 138.88vw 107.15vh;
+        background-repeat: no-repeat;
     }
-
-    .search-box__form{
-        display: flex;
-        width: 100%;
-    }
-    .search-box__form_label{
-        font-size: 2vw;
-    }
-
+    
     .main-page__main-section {
+        padding-left: 40px;
         box-sizing: border-box;
-        width: 100%;
-        padding-left: 0;
+        width: 60%;
     }
     
     .main-page__search-box {
-        margin-bottom: 10vw;
+        margin-bottom: 35px;
     }
-
-   
-.main-page__favorites {
-    width: 100%;   
-    display: flex;
-     margin-bottom: 10vw;
-}
+    
+    .main-page__favorites {
+        width: 35%;   
+    }
  
 }

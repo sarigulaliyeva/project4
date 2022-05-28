@@ -14,7 +14,6 @@ class Favorites extends Component {
     this.setState({ title: e.target.value });
   };
   saveList=(e)=>{
-  // alert("Ugurlu")
     e.target.style.display='none'
     document.querySelector('.link__none').style.display='block'
     this.props.isSaved()
@@ -63,6 +62,14 @@ class Favorites extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return { 
+    movies: state.addMovies,
+    linkActive: state.linkActive,
+    savedBolen:state.savedBolen,
+   };
+};
+
 const mapDispatchToProps = (dispatch) => {
   return {
     deleteMovies: (id) => {
@@ -72,15 +79,9 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(setLinkActive(bool));
     },
     isSaved:()=>{
-      dispatch(isSaved())
+      dispatch(isSaved());
     }
   };
 };
-const mapStateToProps = (state) => {
-  return { 
-    movies: state.addMovies,
-    linkActive: state.linkActive,
-    savedBolen:state.savedBolen,
-   };
-};
+
 export default connect(mapStateToProps, mapDispatchToProps)(Favorites);

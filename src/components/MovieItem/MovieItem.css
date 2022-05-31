@@ -1,36 +1,62 @@
+.movie-item {
+    padding: 20px;
+    background-color: #FFEEDB;
+    display: flex;
+}
+
+.movie-item__poster {
+    height: 150px;
+    margin-right: 21px;
+    border-radius: 10px;
+}
+
+.movie-item__title {
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.movie-item__add-button {
+    border: none;
+    background-color: cadetblue;
+    padding: 10px 15px;
+    color: #FFEEDB;
+    font-size: 14px;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+}
+
+.movie-item__add-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.2s linear;
+    background-color: red;
+}
+
 /* mobile css */
 @media only screen and (max-width: 720px) {
     .movie-item {
-        padding: 20px;
-        background-color: #FFEEDB;
-        display: flex;
+        padding: 6vw;
+        
     }
     
     .movie-item__poster {
-        height: 150px;
-        margin-right: 21px;
-    }
+        height: 35%;
+        margin-right: 4vw;
+     width: 35%;    }
     
     .movie-item__title {
-        font-weight: 500;
-        font-size: 21px;
-        margin-bottom: 14px;
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        width: 60%;
     }
     
     .movie-item__add-button {
-        border: none;
-        background-color: cadetblue;
-        padding: 10px 15px;
-        color: #FFEEDB;
-        font-size: 14px;
-        transition: all 0.2s linear;
-        border-radius: 10px;
+        padding: 2.7vw 2vw;
+        font-size: 3vw;
+      border-radius: 10px;
+      margin-top: 10px;
     }
     
-    .movie-item__add-button:hover {
-        cursor: pointer;
-        opacity: 0.9;
-        transition: all 0.2s linear;
-        background-color: red;
-    }
+  
 }

@@ -30,7 +30,8 @@ class MovieItem extends Component {
       </article>
     );
   }
-}const mapDispatchToProps = (dispatch) => { 
+}
+const mapDispatchToProps = (dispatch) => { 
   return {
     addMovies:(id)=>{
       dispatch(selectMovies(id))

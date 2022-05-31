@@ -1,25 +1,46 @@
-/* Mobile*/
-@media only screen and (min-width: 300px) {
+.list-page {
+    padding: 42px calc(50% - 300px);
+    background-image: url(https://media.newyorker.com/photos/5a2abc7db975455799c591a7/master/w_2560%2Cc_limit/TNY-Best-Of-2017-Films-NEW.gif);
+    height: 87vh;
+    background-size: 138.88vw 107.15vh;
+    background-repeat: no-repeat;
+    padding-left: 45px;
+}
+
+.list-page__title {
+    font-size: 34px;
+    margin-bottom: 26px;
+    background-color: burlywood;
+    margin: 25px;
+    text-align: center;
+    margin: 50px;
+    width: 600px;
+}
+
+.list-page ul li {
+    font-size: 18px;
+    margin: 25px;
+    width: 650px;
+}
+
+
+/* mobile css */
+@media only screen and (max-width: 720px) {
     .list-page {
         padding: 42px calc(50% - 300px);
-        background-image: url(https://wallpaperaccess.com/full/1699275.jpg);
+        background-image: url(https://media.newyorker.com/photos/5a2abc7db975455799c591a7/master/w_2560%2Cc_limit/TNY-Best-Of-2017-Films-NEW.gif);
         height: 87vh;
         background-size: 138.88vw 107.15vh;
-        background-repeat: no-repeat;
     }
-    
+
     .list-page__title {
-        font-size: 34px;
+        font-size: 4.72vw;
         margin-bottom: 26px;
-        text-align: center;
-        background-color: burlywood;
-        margin: 25px;
+        width: 53.33vw;
     }
-    
+
     .list-page ul li {
-        font-size: 18px;
-        margin: 25px;
-        margin-left: 55px;
-        margin-right: 55px;
+        font-size: 2.5vw;
+        width: 60.27vw;
     }
 }

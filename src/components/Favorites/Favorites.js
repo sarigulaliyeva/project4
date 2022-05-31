@@ -34,7 +34,7 @@ class Favorites extends Component {
     const { title, listLink } = this.state;
     return (
       <div className="favorites">
-        <input className="favorites__name" value={this.state.title} onChange={this.handleInput}/>
+        <input className="favorites__name" value={this.state.title} onChange={this.handleInput} placeholder="Пожалуйста, введите название"/>
         <ul className="favorites__list">
           {this.props.movies.map((item) => {
             return (
@@ -69,7 +69,6 @@ const mapStateToProps = (state) => {
     savedBolen:state.savedBolen,
    };
 };
-
 const mapDispatchToProps = (dispatch) => {
   return {
     deleteMovies: (id) => {
@@ -79,7 +78,7 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(setLinkActive(bool));
     },
     isSaved:()=>{
-      dispatch(isSaved());
+      dispatch(isSaved())
     }
   };
 };

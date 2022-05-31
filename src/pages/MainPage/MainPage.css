@@ -6,7 +6,6 @@
     height: 75.8vh;
     background-size: 138.88vw 107.15vh;
     background-repeat: no-repeat;
-    display: flex;
 }
 
 .main-page__main-section {
@@ -29,7 +28,7 @@
         padding: 6vw calc(50% - 40vw);
         display: flex;
         justify-content: space-between;
-        flex-direction: column-reverse;
+        flex-direction: column;
         background-image: url(https://www.itl.cat/pngfile/big/46-465731_streaming-movies.jpg);
         height: 75.8vh;
         background-size: 138.88vw 107.15vh;

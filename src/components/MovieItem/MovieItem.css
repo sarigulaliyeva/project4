@@ -37,14 +37,16 @@
 @media only screen and (max-width: 720px) {
     .movie-item {
         padding: 6vw;
+        position: relative;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
     }
     
     .movie-item__poster {
         height: 35%;
         margin-right: 4vw;
-     width: 35%;    }
+        width: 35%;    }
     
     .movie-item__title {
         font-size: 4vw;
@@ -55,8 +57,8 @@
     .movie-item__add-button {
         padding: 2.7vw 2vw;
         font-size: 3vw;
-      border-radius: 10px;
-      margin-top: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
     }
     
   

@@ -23,7 +23,7 @@ class SearchBox extends Component {
           className="search-box__form"
           onSubmit={this.searchBoxSubmitHandler}
         >
-          <label className="search-box__form-label">
+          <label className="search-box__form-label"> 
             Искать фильм по названию:
             <input
               value={searchLine}

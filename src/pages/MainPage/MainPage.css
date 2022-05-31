@@ -30,6 +30,10 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
+        background-image: url(https://www.itl.cat/pngfile/big/46-465731_streaming-movies.jpg);
+        height: 75.8vh;
+        background-size: 138.88vw 107.15vh;
+        background-repeat: no-repeat;
     }
 
     .search-box__form{

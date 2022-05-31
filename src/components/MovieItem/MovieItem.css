@@ -37,7 +37,8 @@
 @media only screen and (max-width: 720px) {
     .movie-item {
         padding: 6vw;
-        
+        display: flex;
+        justify-content: flex-end;
     }
     
     .movie-item__poster {

@@ -4,8 +4,12 @@
 
 .search-box__form-label {
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   margin-right: 10px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding-top: 5px;
+  font-style: italic;
 }
 
 .search-box__form-input {

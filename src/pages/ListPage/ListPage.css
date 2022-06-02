@@ -1,6 +1,6 @@
 .list-page {
     padding: 42px calc(50% - 300px);
-    background-image: url(https://media.newyorker.com/photos/5a2abc7db975455799c591a7/master/w_2560%2Cc_limit/TNY-Best-Of-2017-Films-NEW.gif);
+    background-image: url(https://northernvirginiamag.com/wp-content/uploads/2020/08/movie-popcorn.jpg);
     height: 87vh;
     background-size: 138.88vw 107.15vh;
     background-repeat: no-repeat;
@@ -13,14 +13,17 @@
     background-color: burlywood;
     margin: 25px;
     text-align: center;
-    margin: 50px;
-    width: 600px;
+    width: 650px;
+    padding: 10px;
 }
 
 .list-page ul li {
-    font-size: 18px;
+    font-size: 25px;
     margin: 25px;
-    width: 650px;
+    margin-left: 45px;
+    width: 600px;
+    padding: 10px;
+    margin-right: 25px;
 }
 
 
@@ -28,7 +31,7 @@
 @media only screen and (max-width: 720px) {
     .list-page {
         padding: 42px calc(50% - 300px);
-        background-image: url(https://media.newyorker.com/photos/5a2abc7db975455799c591a7/master/w_2560%2Cc_limit/TNY-Best-Of-2017-Films-NEW.gif);
+        background-image: url(https://northernvirginiamag.com/wp-content/uploads/2020/08/movie-popcorn.jpg);
         height: 87vh;
         background-size: 138.88vw 107.15vh;
     }
@@ -37,10 +40,12 @@
         font-size: 4.72vw;
         margin-bottom: 26px;
         width: 53.33vw;
+        margin-right: 550px;
     }
 
     .list-page ul li {
         font-size: 2.5vw;
-        width: 60.27vw;
+        width: 40.27vw;
+        margin-left: 10.41vw;
     }
 }

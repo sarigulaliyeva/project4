@@ -4,6 +4,7 @@
     padding: 30px 20px;
     border-radius: 10px;
     background-color: cadetblue;
+    margin-right: 25px;
   }
   
   .favorites__name {
@@ -47,8 +48,10 @@
   /* mobile css */
   @media only screen and (max-width: 720px) {
     .favorites {
-      width: 80%;
+      width: 100%;
       padding: 4vw;
+      margin-left: 25px;
+      margin-bottom: 50px;
     }
   
     .favorites__name {

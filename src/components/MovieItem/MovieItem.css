@@ -46,12 +46,17 @@
     .movie-item__poster {
         height: 35%;
         margin-right: 4vw;
-        width: 35%;    }
+        width: 65%;   
+        margin-left: 15%;
+     }
     
     .movie-item__title {
+        margin-top: 10px;
         font-size: 4vw;
         margin-bottom: 2vw;
         width: 60%;
+        margin-left: 15%;
+        text-align: center;
     }
     
     .movie-item__add-button {
@@ -59,6 +64,8 @@
         font-size: 3vw;
         border-radius: 10px;
         margin-top: 10px;
+        margin-left: 13%;
+        width: 70%;
     }
     
   
